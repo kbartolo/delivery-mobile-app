@@ -1,0 +1,15 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "typeRoots": ["./src/types"],
+    "strict": true,
+    "paths": {
+      "@components": ["./src/components/index.ts"],
+      "@screens": ["./src/screens/index.ts"],
+      "@hooks": ["./src/hooks/index.ts"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@store": ["./src/store/index.ts"],
+      "@schemas/*": ["./src/sanity/*"]
+    }
+  }
+}
